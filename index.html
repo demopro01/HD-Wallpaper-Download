@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Wallpaper Download</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HD Wallpaper Download</h1>
+        <nav>
+            <ul>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#random">Random</a></li>
+                <li><a href="#categories">Categories</a></li>
+            </ul>
+        </nav>
+        <form id="search-form">
+            <input type="text" id="search-bar" placeholder="Search wallpapers...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <section id="wallpapers">
+            <!-- Wallpapers will be dynamically loaded here -->
+        </section>
+        <section id="advertisement">
+            <!-- Placeholder for advertisements -->
+            <div id="ad-space">
+                <!--step 1 ad-->
+                <div id="ad-step-1">                    
+                    <p>Your Advertisement Here (Step 1/2)</p>
+                    
+                    <span id="countdown" style="font-size: 22px; color: #818182;">
+                        Please wait <span id="tp-time">15</span> seconds
+                    </span>
+
+                    <div class="button-container">
+                        <button class="button" id="continueButton" onclick="showStep2()" disabled>Continue to Download</button>
+                    </div>
+                    <div id="tp-wait1">
+                        <div class="tp-time"></div>
+                    </div>
+                </div>
+                <!--step 2 ad-->
+                <div id="ad-step-2" style="display:none;">
+                    <p>Your Advertisement Here (Step 2/2)</p>
+                    
+                    <span id="countdown-step-2" style="font-size: 22px; color: #818182;">
+                        Please wait <span id="tp-time-step-2">10</span> seconds
+                    </span>
+                    
+                    <div class="button-container">
+                        <button class="button" id="downloadButton" onclick="location.href='https://images.pexels.com/photos/592077/pexels-photo-592077.jpeg?cs=srgb&dl=pexels-katja-79053-592077.jpg&fm=jpg&_gl=1*1pamnux*_ga*NDgyMjMzNzQ3LjE2OTQyODY3NDM.*_ga_8JE65Q40S6*MTcxNzE3MTc5MC4xOS4wLjE3MTcxNzE3OTAuMC4wLjA.'" disabled>Download</button>
+                        <div id="tp-wait2">
+                            <div class="tp-time"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HD Wallpaper Download</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
